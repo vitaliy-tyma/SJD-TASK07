@@ -36,14 +36,14 @@ public class AppRunner {
 		
 		int divisible = 1000;
 		int divisor = 0;
-		float result = 0;
+		float result = Float.NaN;
 		
 		
 		try {
 			result = customDivision(divisible, divisor);
 		} 
-		catch (DivisionByZeroCustomException e) {
-			logger.info("DivisionByZeroCustomException - division is not possible!");
+		catch (DivisionByZeroCustomException ex) {
+        	logger.info("DivisionByZeroCustomException - division is not possible!");
 		}
 		finally {
 			logger.info("We are out.");
