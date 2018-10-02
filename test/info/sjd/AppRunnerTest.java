@@ -13,7 +13,7 @@ class AppRunnerTest {
 	@Rule
 	public ExpectedException exception = ExpectedException.none();
 
-	@Test // (expected = DivisionByZeroCustomException.class)
+	@Test
 	void testCustomDivision() throws DivisionByZeroCustomException {
 
 		assertEquals(10.0, AppRunner.customDivision(1000, 100));
